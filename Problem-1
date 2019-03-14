@@ -1,0 +1,28 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	int ticket250, ticket100, ticket50, ticket25;
+	float ticketsSold, totalSaleAmount;
+	char first;
+
+	ticket250 = 5750;
+	ticket100 = 28000;
+	ticket50 = 35750;
+	ticket25 = 18750;
+
+	cout<< "Ticket Type          Amount of Tickets Sold" <<endl;
+	cout<< "Box                        " << ticket250 << endl;
+	cout<< "Sideline                   " << ticket100 << endl;
+	cout<< "Premium                    " << ticket50 << endl;
+	cout<< "General Admission          " << ticket25 << endl;
+	cout<< ".........................................." << endl;
+	cout<< "Total Tickets Sold: " << ticket250 + ticket100 + ticket50 + ticket25 << endl;
+	cout << "Total Sale Amount: " << ticket250 * 250 + ticket100 * 100 + ticket50 * 50 + ticket25 * 25 << endl;
+
+	_getch();
+	return 0;
+}
